@@ -40,7 +40,7 @@
     .nav-logo { display: flex; align-items: center; gap: 11px; text-decoration: none; }
     .logo-mark { width: 34px; height: 34px; background: var(--green); border-radius: 9px; display: flex; align-items: center; justify-content: center; }
     .logo-mark svg { width: 18px; height: 18px; stroke: #fff; fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
-    .logo-name { font-family: 'DM Serif Display', serif; font-size: 19px; color: #fff; }
+    .logo-name { font-family: 'DM Serif Display', serif; font-size: 15px; color: #fff; white-space: nowrap; }
     .logo-name span { color: var(--green-light); }
     .nav-links { display: flex; gap: 32px; list-style: none; }
     .nav-links a { font-size: 14px; color: rgba(255,255,255,0.72); text-decoration: none; transition: color .2s; }
@@ -239,14 +239,14 @@
 
 <!-- HERO SLIDESHOW -->
 <div class="hero">
-  <!-- Slide 1: Tropical beach -->
+  <!-- Slide 1: Hawaii -->
   <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1800&q=85')"></div>
-  <!-- Slide 2: Snowy mountains / ski -->
-  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1546519638-68e109498ffc?w=1800&q=85')"></div>
-  <!-- Slide 3: Luxury resort pool -->
+  <!-- Slide 2: Orlando -->
   <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1800&q=85')"></div>
-  <!-- Slide 4: Mountain landscape -->
-  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1800&q=85')"></div>
+  <!-- Slide 3: Daytona / Beach -->
+  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1800&q=85')"></div>
+  <!-- Slide 4: Hilton Head -->
+  <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1587502537745-f0b67d3bcbb3?w=1800&q=85')"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="hero-badge">
@@ -254,7 +254,7 @@
       Premium timeshare vacation rentals — zero booking fees
     </div>
     <h1>Your dream vacation<br>at a <em>fraction</em> of the cost</h1>
-    <p>Beaches, ski resorts, tropical islands, mountain retreats — we unlock owner-direct access to luxury resorts worldwide.</p>
+    <p>Hawaii, Orlando, Daytona Beach, Hilton Head — we unlock owner-direct access to luxury resorts at members-only rates.</p>
     <div class="hero-actions">
       <a href="#quote" class="btn-primary">Get a free quote</a>
       <a href="#destinations" class="btn-outline">Explore destinations</a>
@@ -533,30 +533,198 @@
           <label>Phone number *</label>
           <input type="tel" name="phone" placeholder="(239) 555-0100" required />
         </div>
-        <div class="f-field">
-          <label>Destination *</label>
-          <select name="destination" required>
-            <option value="">Select a destination...</option>
-            <option>Aruba</option>
-            <option>Hawaii</option>
-            <option>Orlando / Disney World</option>
-            <option>Las Vegas</option>
-            <option>Myrtle Beach</option>
-            <option>Destin, FL</option>
-            <option>Lake Tahoe (Ski)</option>
-            <option>The Bahamas</option>
-            <option>Panama City Beach</option>
-            <option>Fort Lauderdale</option>
-            <option>San Diego</option>
-            <option>Cancún</option>
-            <option>Cabo San Lucas</option>
-            <option>Branson / Smoky Mountains</option>
-            <option>Other</option>
-          </select>
+        <div class="f-field full">
+          <label>Preferred resort (or type a location) *</label>
+          <input list="resortList" name="destination" placeholder="Search resort name or destination..." required />
+          <datalist id="resortList">
+            <option>Accra Beach Hotel And Spa, Barbados</option>
+            <option>Aqua Palms Waikiki Resort, HI</option>
+            <option>Aston Waikiki Beach Tower</option>
+            <option>Capistrano SurfSide Inn</option>
+            <option>Carlsbad Seapointe Resort</option>
+            <option>Christie Lodge, Beaver Creek</option>
+            <option>Daytona SeaBreeze Resort, Daytona Beach, FL</option>
+            <option>Diamond Resorts, Ka'anapali Beach Club</option>
+            <option>Diamond Resorts, Point at Poipu</option>
+            <option>Disney's Boardwalk Villas</option>
+            <option>Divi Aruba Beach Resort</option>
+            <option>Divi Little Bay Beach Resort</option>
+            <option>Grand Pacific Palisades</option>
+            <option>Harborside Resort at Atlantis</option>
+            <option>Havasu Dunes Resort</option>
+            <option>Hilton Club The District Washington D.C.</option>
+            <option>Hilton Grand Vacations at Kings Land</option>
+            <option>Hilton Grand Vacations Club at Sea World</option>
+            <option>Hilton Hawaiian Village, Honolulu, HI</option>
+            <option>Hilton MarBrisa, Carlsbad, CA</option>
+            <option>Hilton Sunrise Lodge, Park City, UT</option>
+            <option>Hilton Valdoro Mountain Lodge, Breckenridge, CO</option>
+            <option>Hyatt Ka'anapali Residence Club, Maui, HI</option>
+            <option>Hyatt Regency Orange County, CA</option>
+            <option>Hyatt Residence Club Carmel, Highlands Inn</option>
+            <option>Island Seas Resort Freeport</option>
+            <option>Kahana Falls Resort, Lahaina, HI</option>
+            <option>Kauai Beach Villas, HI</option>
+            <option>Lawai Beach Resort, Kauai, HI</option>
+            <option>Marriott Aruba Ocean Club, Palm Bch. Aruba</option>
+            <option>Marriott Aruba Surf Club, Palm Bch. Aruba</option>
+            <option>Marriott Barony Beach Club, Hilton Head, SC</option>
+            <option>Marriott BeachPlace Towers, Ft. Lauderdale</option>
+            <option>Marriott Canyon Villas, Phoenix, AZ</option>
+            <option>Marriott Crystal Shores, Marco Island, FL</option>
+            <option>Marriott Cypress Harbour, Orlando, FL</option>
+            <option>Marriott Fairway Villas, Galloway, NJ</option>
+            <option>Marriott Frenchman's Cove, St. Thomas, USVI</option>
+            <option>Marriott Grand Chateau, Las Vegas, NV</option>
+            <option>Marriott Grand Residence Club, Lake Tahoe, CA</option>
+            <option>Marriott Grande Ocean, Hilton Head, SC</option>
+            <option>Marriott Grande Vista, Orlando, FL</option>
+            <option>Marriott Harbour Point, Hilton Head, SC</option>
+            <option>Marriott Heritage Club, Hilton Head, SC</option>
+            <option>Marriott Kauai Beach Club, HI</option>
+            <option>Marriott Kauai Lagoons</option>
+            <option>Marriott Ko Olina Beach Club, Oahu, HI</option>
+            <option>Marriott Lakeshore Reserve, Orlando, FL</option>
+            <option>Marriott Legends Edge, Panama City, FL</option>
+            <option>Marriott Manor Club, Williamsburg, VA</option>
+            <option>Marriott Marbella Beach, Spain</option>
+            <option>Marriott Maui Ocean Club, HI</option>
+            <option>Marriott Monarch at Sea Pines, Hilton Head, SC</option>
+            <option>Marriott Mountain Valley Lodge, Breckenridge, CO</option>
+            <option>Marriott Mountainside Resort, Park City, CO</option>
+            <option>Marriott Newport Coast Villas, CA</option>
+            <option>Marriott Ocean Pointe, Palm Bch. Shores, FL</option>
+            <option>Marriott Oceana Palms, Riviera Bch., FL</option>
+            <option>Marriott Oceanwatch Villas, Myrtle Bch., SC</option>
+            <option>Marriott Phuket Beach Club, Thailand</option>
+            <option>Marriott Royal Palms, Orlando, FL</option>
+            <option>Marriott Sabal Palms, Orlando, FL</option>
+            <option>Marriott Shadow Ridge, Palm Desert, CA</option>
+            <option>Marriott Streamside at Vail, CO</option>
+            <option>Marriott Summit Watch, Park City, CO</option>
+            <option>Marriott Surfwatch, Hilton Head, SC</option>
+            <option>Marriott Timber Lodge, Breckenridge, CO</option>
+            <option>Marriott Vacation Club Pulse at Custom House, Boston</option>
+            <option>Marriott Vacation Club Pulse at San Diego, CA</option>
+            <option>Marriott Vacation Club Pulse at San Francisco, CA</option>
+            <option>Marriott Vacation Club Pulse at The Mayflower, DC</option>
+            <option>Marriott Village d'ile-de-France, Paris</option>
+            <option>Marriott Waiohai Beach Club, Kauai, HI</option>
+            <option>Marriott's Willow Ridge, Branson, MO</option>
+            <option>Maui Banyon Resort, HI</option>
+            <option>Morritt's Tortuga Club, Cayman Islands</option>
+            <option>Ocean Enclave by HGV, Myrtle Beach, SC</option>
+            <option>Olympic Village Inn, Lake Tahoe</option>
+            <option>Orange Lake Resort, Kissimmee</option>
+            <option>Orange Tree Resort, Scottsdale, AZ</option>
+            <option>Paradise Beach Villas</option>
+            <option>Paradise Village Beach Resort</option>
+            <option>Park Plaza Resort, Park City, UT</option>
+            <option>Peacock Suites</option>
+            <option>Playa Grande Park Hotel, Costa Rica</option>
+            <option>Red Wolf Lakeside Lodge</option>
+            <option>Red Wolf Lodge Squaw Valley</option>
+            <option>Ridge on Sedona Golf Resort</option>
+            <option>Ritz Carlton Club, San Francisco, CA</option>
+            <option>Ritz-Carlton Club Vail, CO</option>
+            <option>RiverPointe Napa Valley</option>
+            <option>San Luis Bay Inn</option>
+            <option>Scottsdale Links Resort</option>
+            <option>Scottsdale Villa Mirage</option>
+            <option>Sheraton Broadway Plantation Resort Villas</option>
+            <option>Sheraton Desert Oasis Villas</option>
+            <option>Sheraton Kauai Resort</option>
+            <option>Sheraton Vistana Resort, FL</option>
+            <option>Southern California Beach Club, CA</option>
+            <option>Star Island Resort and Club, FL</option>
+            <option>Sunset Cove Resort, Marco Island, FL</option>
+            <option>Tahoe Beach and Ski Club</option>
+            <option>The Carlsbad Inn</option>
+            <option>The District by Hilton Club</option>
+            <option>The Manhattan Club</option>
+            <option>The Plaza Resort and Spa</option>
+            <option>The Point at Poipu</option>
+            <option>The Pono Kai Resort</option>
+            <option>The Residences by Hilton Club, NY</option>
+            <option>The Royal Kuhio</option>
+            <option>The Royal Sands, Mexico</option>
+            <option>Vidanta Grand Mayan Los Cabos, MX</option>
+            <option>Vidanta Grand Mayan Nuevo Vallarta, MX</option>
+            <option>Vista Mirage Resort</option>
+            <option>Waikiki Shore, Hawaii</option>
+            <option>Westgate Myrtle Beach Resort</option>
+            <option>Westgate Park City, UT</option>
+            <option>Westin Desert Willow, Palm Desert, CA</option>
+            <option>Westin Ka'anapali Ocean Resort, Maui, HI</option>
+            <option>Westin Kierland Resort &amp; Spa, Scottsdale, AZ</option>
+            <option>Westin Mission Hills Villas, Rancho Mirage, CA</option>
+            <option>Westin Nanea Ocean Villas, Maui, HI</option>
+            <option>WorldMark Anaheim, CA</option>
+            <option>WorldMark Dolphin's Cove, CA</option>
+            <option>Worldmark Kihei, HI</option>
+            <option>WorldMark SD Mission Valley, CA</option>
+            <option>Wyndham Anaheim, CA</option>
+            <option>Wyndham at the Cottages, Myrtle Beach, SC</option>
+            <option>Wyndham Austin, TX</option>
+            <option>Wyndham Avenue Plaza, New Orleans, LA</option>
+            <option>Wyndham Bali Hai Villas, Hawaii</option>
+            <option>Wyndham Bentley Brook, MA</option>
+            <option>Wyndham Bonnet Creek Resort, Orlando, FL</option>
+            <option>Wyndham Branson at The Meadows, MO</option>
+            <option>Wyndham Dolphin's Cove Resort, CA</option>
+            <option>Wyndham Durango, CO</option>
+            <option>Wyndham Dye Villas, Myrtle Beach, SC</option>
+            <option>Wyndham Fairfield Bay, AR</option>
+            <option>Wyndham Fairfield Glade, Crossville, TN</option>
+            <option>Wyndham Glacier Canyon, WI</option>
+            <option>Wyndham Governor's Green, VI</option>
+            <option>Wyndham Harbour Lights, San Diego</option>
+            <option>Wyndham Ka Eo Kai</option>
+            <option>Wyndham Kingsgate, Williamsburg, VA</option>
+            <option>Wyndham La Belle Maison, New Orleans</option>
+            <option>Wyndham Nashville Resort, TN</option>
+            <option>Wyndham National Harbor, DC</option>
+            <option>Wyndham Ocean Boulevard, Myrtle Bch, SC</option>
+            <option>Wyndham Ocean Ridge, South Carolina</option>
+            <option>Wyndham Ocean Walk, Daytona Beach, FL</option>
+            <option>Wyndham Oceanside Pier Resort, CA</option>
+            <option>Wyndham Old Town Alexandria, VA</option>
+            <option>Wyndham Pagosa, CO</option>
+            <option>Wyndham Palm-Aire, Pompano Bch, FL</option>
+            <option>Wyndham Panama City Beach, FL</option>
+            <option>Wyndham Park City Resort, UT</option>
+            <option>Wyndham Patriots Place, Williamsburg, VA</option>
+            <option>Wyndham Resort at Avon, CO</option>
+            <option>Wyndham Royal Vista, Pompano Bch, FL</option>
+            <option>Wyndham Santa Barbara, Pompano Bch, FL</option>
+            <option>Wyndham Sapphire Valley, NC</option>
+            <option>Wyndham Sea Gardens, Pompano Bch, FL</option>
+            <option>Wyndham Sea Watch Plantation, Myrtle Bch, SC</option>
+            <option>Wyndham Seaglass Tower, Myrtle Bch, SC</option>
+            <option>Wyndham Sedona, AZ</option>
+            <option>Wyndham Smoky Mountains, TN</option>
+            <option>Wyndham St. Thomas, USVI</option>
+            <option>Wyndham Star Island, Kissimmee, FL</option>
+            <option>Wyndham Steamboat Springs, CO</option>
+            <option>Wyndham Towers on the Grove, Myrtle Bch, SC</option>
+            <option>Wyndham Waikiki Beach Walk, Honolulu, HI</option>
+            <option>Wyndham Westwinds, Myrtle Beach, SC</option>
+            <option>Other / Not listed</option>
+          </datalist>
         </div>
         <div class="f-field">
-          <label>Travel month &amp; year *</label>
-          <input type="text" name="travel" placeholder="e.g. July 2026" required />
+          <label>Check-in date *</label>
+          <input type="date" name="checkin" required min="" />
+        </div>
+        <div class="f-field">
+          <label>Check-out date *</label>
+          <input type="date" name="checkout" required min="" />
+        </div>
+        <div class="f-field full">
+          <label style="display:flex;align-items:center;gap:10px;cursor:pointer;font-size:13px">
+            <input type="checkbox" name="flexible" value="Yes" style="width:16px;height:16px;accent-color:#1D9E75;cursor:pointer;" />
+            My dates are flexible — I'm open to nearby dates if it saves money
+          </label>
         </div>
         <div class="f-field">
           <label>Party size</label>
@@ -568,12 +736,13 @@
           </select>
         </div>
         <div class="f-field">
-          <label>Budget range</label>
+          <label>Nightly Budget Range</label>
           <select name="budget">
-            <option>Under $500</option>
-            <option>$500 – $1,000</option>
-            <option>$1,000 – $2,000</option>
-            <option>$2,000+</option>
+            <option>$250 – $349 per night</option>
+            <option>$350 – $499 per night</option>
+            <option>$500 – $699 per night</option>
+            <option>$700 – $999 per night</option>
+            <option>$1,000+ per night</option>
           </select>
         </div>
         <div class="f-field full">
@@ -590,8 +759,16 @@
       </div>
     </form>
     <div class="success-msg" id="successMsg">
-      <h3>Thanks! We'll be in touch soon.</h3>
-      <p>Your quote request has been received. Our team will respond within 24 hours with your personalized vacation options.</p>
+      <div style="font-size:40px;margin-bottom:16px">🌴</div>
+      <h3>Got it — I'll personally take it from here.</h3>
+      <p style="margin-bottom:20px;font-size:16px;color:rgba(255,255,255,0.78);line-height:1.8">Hi, I'm Adam Barrett. I just received your request and I'm already looking into availability for you. I'll be in touch within a few hours — usually much sooner — with the best options I can find at owner-direct rates.</p>
+      <p style="margin-bottom:20px;font-size:14px;color:rgba(255,255,255,0.55);line-height:1.7">I've been placing families and couples in premium resort stays for years. My job is simple — find you something incredible at a price that makes you smile. I take that personally.</p>
+      <div style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:12px;padding:20px 24px;margin-top:8px;display:inline-block">
+        <p style="font-size:13px;color:rgba(255,255,255,0.5);margin-bottom:6px">Need to reach me directly?</p>
+        <a href="tel:+12398237286" style="font-size:18px;font-weight:500;color:#5DCAA5;text-decoration:none;display:block;margin-bottom:4px">📞 (239) 823-7286</a>
+        <p style="font-size:12px;color:rgba(255,255,255,0.4)">Call or text — I'm usually available same day</p>
+      </div>
+      <p style="margin-top:24px;font-size:13px;color:rgba(255,255,255,0.35)">— Adam Barrett, AK Outdoor Group Travel · Winter Park, Florida</p>
     </div>
   </div>
 </div>
@@ -602,9 +779,9 @@
     <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.07 6.07l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
     (239) 823-7286
   </a>
-  <a href="/cdn-cgi/l/email-protection#67262c28121303080815001508121727000a060e0b4904080a" class="contact-item">
+  <a href="mailto:sales@akoutdoorgrouptravel.com" class="contact-item">
     <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-    <span class="__cf_email__" data-cfemail="98d9d3d7edecfcf7f7eaffeaf7ede8d8fff5f9f1f4b6fbf7f5">[email&#160;protected]</span>
+    sales@akoutdoorgrouptravel.com
   </a>
   <div class="contact-item">
     <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -614,7 +791,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">AK <span>Outdoor</span> Group Travel, LLC</div>
+  <div class="footer-logo">AK <span>Outdoor</span> Group Travel LLC</div>
   <div class="footer-mid">© 2026 AK Outdoor Group Travel, LLC · Winter Park, Florida · Premium Timeshare Vacation Rentals</div>
   <div class="footer-links">
     <a href="#">Privacy policy</a>
@@ -623,6 +800,19 @@
 </footer>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  // Set minimum dates to today
+  const today = new Date().toISOString().split('T')[0];
+  const checkin = document.querySelector('input[name="checkin"]');
+  const checkout = document.querySelector('input[name="checkout"]');
+  checkin.min = today;
+  checkout.min = today;
+  checkin.addEventListener('change', function() {
+    checkout.min = this.value;
+    if (checkout.value && checkout.value < this.value) {
+      checkout.value = this.value;
+    }
+  });
+
   // Slideshow
   const slides = document.querySelectorAll('.hero-slide');
   const dots = document.querySelectorAll('.dot');
@@ -653,14 +843,7 @@
     btn.textContent = 'Sending...';
     btn.disabled = true;
 
-    /*
-      TO ENABLE REAL EMAIL DELIVERY TO AKOutdoorgroup@gmail.com:
-      1. Sign up free at https://formspree.io
-      2. Create a form pointed at AKOutdoorgroup@gmail.com
-      3. Copy your form ID and replace YOUR_FORM_ID below
-      4. Remove the setTimeout block and uncomment the fetch block
-
-    fetch('https://formspree.io/f/YOUR_FORM_ID', {
+    fetch('https://formspree.io/f/xpqoopwe', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({
@@ -668,9 +851,32 @@
         email: this.email.value,
         phone: this.phone.value,
         destination: this.destination.value,
-        travel: this.travel.value,
+        checkin: this.checkin.value,
+        checkout: this.checkout.value,
+        flexible_dates: this.flexible.checked ? 'Yes' : 'No',
         guests: this.guests.value,
         budget: this.budget.value,
         message: this.notes.value
       })
-    }).then(() => showSuccess()).catch(() => showSucce
+    }).then(function(response) {
+      if (response.ok) {
+        showSuccess();
+      } else {
+        btn.textContent = 'Get my free quote →';
+        btn.disabled = false;
+        alert('Something went wrong. Please try again or call us at (239) 823-7286.');
+      }
+    }).catch(function() {
+      btn.textContent = 'Get my free quote →';
+      btn.disabled = false;
+      alert('Something went wrong. Please try again or call us at (239) 823-7286.');
+    });
+  });
+
+  function showSuccess() {
+    document.getElementById('quoteForm').style.display = 'none';
+    document.getElementById('successMsg').style.display = 'block';
+  }
+</script>
+</body>
+</html>

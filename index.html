@@ -223,10 +223,7 @@
 <!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">
-    <div class="logo-mark">
-      <svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 4-6 4 10"/></svg>
-    </div>
-    <div class="logo-name">AK <span>Outdoor</span> Group Travel</div>
+    <img src="logo.png" alt="AK Outdoor Group Travel" style="height:48px;width:auto;object-fit:contain;" />
   </a>
   <ul class="nav-links">
     <li><a href="#why">Why us</a></li>
@@ -515,249 +512,24 @@
       <h2>Request your free vacation quote</h2>
       <p>Beaches, ski resorts, tropical islands, mountain retreats — tell us where you want to go and we'll find the best available stays at owner-direct rates.</p>
     </div>
-    <form id="quoteForm">
-      <div class="form-grid">
-        <div class="f-field">
-          <label>First name *</label>
-          <input type="text" name="fname" placeholder="Jane" required />
-        </div>
-        <div class="f-field">
-          <label>Last name *</label>
-          <input type="text" name="lname" placeholder="Smith" required />
-        </div>
-        <div class="f-field">
-          <label>Email address *</label>
-          <input type="email" name="email" placeholder="jane@email.com" required />
-        </div>
-        <div class="f-field">
-          <label>Phone number *</label>
-          <input type="tel" name="phone" placeholder="(239) 555-0100" required />
-        </div>
-        <div class="f-field full">
-          <label>Preferred resort (or type a location) *</label>
-          <input list="resortList" name="destination" placeholder="Search resort name or destination..." required />
-          <datalist id="resortList">
-            <option>Accra Beach Hotel And Spa, Barbados</option>
-            <option>Aqua Palms Waikiki Resort, HI</option>
-            <option>Aston Waikiki Beach Tower</option>
-            <option>Capistrano SurfSide Inn</option>
-            <option>Carlsbad Seapointe Resort</option>
-            <option>Christie Lodge, Beaver Creek</option>
-            <option>Daytona SeaBreeze Resort, Daytona Beach, FL</option>
-            <option>Diamond Resorts, Ka'anapali Beach Club</option>
-            <option>Diamond Resorts, Point at Poipu</option>
-            <option>Disney's Boardwalk Villas</option>
-            <option>Divi Aruba Beach Resort</option>
-            <option>Divi Little Bay Beach Resort</option>
-            <option>Grand Pacific Palisades</option>
-            <option>Harborside Resort at Atlantis</option>
-            <option>Havasu Dunes Resort</option>
-            <option>Hilton Club The District Washington D.C.</option>
-            <option>Hilton Grand Vacations at Kings Land</option>
-            <option>Hilton Grand Vacations Club at Sea World</option>
-            <option>Hilton Hawaiian Village, Honolulu, HI</option>
-            <option>Hilton MarBrisa, Carlsbad, CA</option>
-            <option>Hilton Sunrise Lodge, Park City, UT</option>
-            <option>Hilton Valdoro Mountain Lodge, Breckenridge, CO</option>
-            <option>Hyatt Ka'anapali Residence Club, Maui, HI</option>
-            <option>Hyatt Regency Orange County, CA</option>
-            <option>Hyatt Residence Club Carmel, Highlands Inn</option>
-            <option>Island Seas Resort Freeport</option>
-            <option>Kahana Falls Resort, Lahaina, HI</option>
-            <option>Kauai Beach Villas, HI</option>
-            <option>Lawai Beach Resort, Kauai, HI</option>
-            <option>Marriott Aruba Ocean Club, Palm Bch. Aruba</option>
-            <option>Marriott Aruba Surf Club, Palm Bch. Aruba</option>
-            <option>Marriott Barony Beach Club, Hilton Head, SC</option>
-            <option>Marriott BeachPlace Towers, Ft. Lauderdale</option>
-            <option>Marriott Canyon Villas, Phoenix, AZ</option>
-            <option>Marriott Crystal Shores, Marco Island, FL</option>
-            <option>Marriott Cypress Harbour, Orlando, FL</option>
-            <option>Marriott Fairway Villas, Galloway, NJ</option>
-            <option>Marriott Frenchman's Cove, St. Thomas, USVI</option>
-            <option>Marriott Grand Chateau, Las Vegas, NV</option>
-            <option>Marriott Grand Residence Club, Lake Tahoe, CA</option>
-            <option>Marriott Grande Ocean, Hilton Head, SC</option>
-            <option>Marriott Grande Vista, Orlando, FL</option>
-            <option>Marriott Harbour Point, Hilton Head, SC</option>
-            <option>Marriott Heritage Club, Hilton Head, SC</option>
-            <option>Marriott Kauai Beach Club, HI</option>
-            <option>Marriott Kauai Lagoons</option>
-            <option>Marriott Ko Olina Beach Club, Oahu, HI</option>
-            <option>Marriott Lakeshore Reserve, Orlando, FL</option>
-            <option>Marriott Legends Edge, Panama City, FL</option>
-            <option>Marriott Manor Club, Williamsburg, VA</option>
-            <option>Marriott Marbella Beach, Spain</option>
-            <option>Marriott Maui Ocean Club, HI</option>
-            <option>Marriott Monarch at Sea Pines, Hilton Head, SC</option>
-            <option>Marriott Mountain Valley Lodge, Breckenridge, CO</option>
-            <option>Marriott Mountainside Resort, Park City, CO</option>
-            <option>Marriott Newport Coast Villas, CA</option>
-            <option>Marriott Ocean Pointe, Palm Bch. Shores, FL</option>
-            <option>Marriott Oceana Palms, Riviera Bch., FL</option>
-            <option>Marriott Oceanwatch Villas, Myrtle Bch., SC</option>
-            <option>Marriott Phuket Beach Club, Thailand</option>
-            <option>Marriott Royal Palms, Orlando, FL</option>
-            <option>Marriott Sabal Palms, Orlando, FL</option>
-            <option>Marriott Shadow Ridge, Palm Desert, CA</option>
-            <option>Marriott Streamside at Vail, CO</option>
-            <option>Marriott Summit Watch, Park City, CO</option>
-            <option>Marriott Surfwatch, Hilton Head, SC</option>
-            <option>Marriott Timber Lodge, Breckenridge, CO</option>
-            <option>Marriott Vacation Club Pulse at Custom House, Boston</option>
-            <option>Marriott Vacation Club Pulse at San Diego, CA</option>
-            <option>Marriott Vacation Club Pulse at San Francisco, CA</option>
-            <option>Marriott Vacation Club Pulse at The Mayflower, DC</option>
-            <option>Marriott Village d'ile-de-France, Paris</option>
-            <option>Marriott Waiohai Beach Club, Kauai, HI</option>
-            <option>Marriott's Willow Ridge, Branson, MO</option>
-            <option>Maui Banyon Resort, HI</option>
-            <option>Morritt's Tortuga Club, Cayman Islands</option>
-            <option>Ocean Enclave by HGV, Myrtle Beach, SC</option>
-            <option>Olympic Village Inn, Lake Tahoe</option>
-            <option>Orange Lake Resort, Kissimmee</option>
-            <option>Orange Tree Resort, Scottsdale, AZ</option>
-            <option>Paradise Beach Villas</option>
-            <option>Paradise Village Beach Resort</option>
-            <option>Park Plaza Resort, Park City, UT</option>
-            <option>Peacock Suites</option>
-            <option>Playa Grande Park Hotel, Costa Rica</option>
-            <option>Red Wolf Lakeside Lodge</option>
-            <option>Red Wolf Lodge Squaw Valley</option>
-            <option>Ridge on Sedona Golf Resort</option>
-            <option>Ritz Carlton Club, San Francisco, CA</option>
-            <option>Ritz-Carlton Club Vail, CO</option>
-            <option>RiverPointe Napa Valley</option>
-            <option>San Luis Bay Inn</option>
-            <option>Scottsdale Links Resort</option>
-            <option>Scottsdale Villa Mirage</option>
-            <option>Sheraton Broadway Plantation Resort Villas</option>
-            <option>Sheraton Desert Oasis Villas</option>
-            <option>Sheraton Kauai Resort</option>
-            <option>Sheraton Vistana Resort, FL</option>
-            <option>Southern California Beach Club, CA</option>
-            <option>Star Island Resort and Club, FL</option>
-            <option>Sunset Cove Resort, Marco Island, FL</option>
-            <option>Tahoe Beach and Ski Club</option>
-            <option>The Carlsbad Inn</option>
-            <option>The District by Hilton Club</option>
-            <option>The Manhattan Club</option>
-            <option>The Plaza Resort and Spa</option>
-            <option>The Point at Poipu</option>
-            <option>The Pono Kai Resort</option>
-            <option>The Residences by Hilton Club, NY</option>
-            <option>The Royal Kuhio</option>
-            <option>The Royal Sands, Mexico</option>
-            <option>Vidanta Grand Mayan Los Cabos, MX</option>
-            <option>Vidanta Grand Mayan Nuevo Vallarta, MX</option>
-            <option>Vista Mirage Resort</option>
-            <option>Waikiki Shore, Hawaii</option>
-            <option>Westgate Myrtle Beach Resort</option>
-            <option>Westgate Park City, UT</option>
-            <option>Westin Desert Willow, Palm Desert, CA</option>
-            <option>Westin Ka'anapali Ocean Resort, Maui, HI</option>
-            <option>Westin Kierland Resort &amp; Spa, Scottsdale, AZ</option>
-            <option>Westin Mission Hills Villas, Rancho Mirage, CA</option>
-            <option>Westin Nanea Ocean Villas, Maui, HI</option>
-            <option>WorldMark Anaheim, CA</option>
-            <option>WorldMark Dolphin's Cove, CA</option>
-            <option>Worldmark Kihei, HI</option>
-            <option>WorldMark SD Mission Valley, CA</option>
-            <option>Wyndham Anaheim, CA</option>
-            <option>Wyndham at the Cottages, Myrtle Beach, SC</option>
-            <option>Wyndham Austin, TX</option>
-            <option>Wyndham Avenue Plaza, New Orleans, LA</option>
-            <option>Wyndham Bali Hai Villas, Hawaii</option>
-            <option>Wyndham Bentley Brook, MA</option>
-            <option>Wyndham Bonnet Creek Resort, Orlando, FL</option>
-            <option>Wyndham Branson at The Meadows, MO</option>
-            <option>Wyndham Dolphin's Cove Resort, CA</option>
-            <option>Wyndham Durango, CO</option>
-            <option>Wyndham Dye Villas, Myrtle Beach, SC</option>
-            <option>Wyndham Fairfield Bay, AR</option>
-            <option>Wyndham Fairfield Glade, Crossville, TN</option>
-            <option>Wyndham Glacier Canyon, WI</option>
-            <option>Wyndham Governor's Green, VI</option>
-            <option>Wyndham Harbour Lights, San Diego</option>
-            <option>Wyndham Ka Eo Kai</option>
-            <option>Wyndham Kingsgate, Williamsburg, VA</option>
-            <option>Wyndham La Belle Maison, New Orleans</option>
-            <option>Wyndham Nashville Resort, TN</option>
-            <option>Wyndham National Harbor, DC</option>
-            <option>Wyndham Ocean Boulevard, Myrtle Bch, SC</option>
-            <option>Wyndham Ocean Ridge, South Carolina</option>
-            <option>Wyndham Ocean Walk, Daytona Beach, FL</option>
-            <option>Wyndham Oceanside Pier Resort, CA</option>
-            <option>Wyndham Old Town Alexandria, VA</option>
-            <option>Wyndham Pagosa, CO</option>
-            <option>Wyndham Palm-Aire, Pompano Bch, FL</option>
-            <option>Wyndham Panama City Beach, FL</option>
-            <option>Wyndham Park City Resort, UT</option>
-            <option>Wyndham Patriots Place, Williamsburg, VA</option>
-            <option>Wyndham Resort at Avon, CO</option>
-            <option>Wyndham Royal Vista, Pompano Bch, FL</option>
-            <option>Wyndham Santa Barbara, Pompano Bch, FL</option>
-            <option>Wyndham Sapphire Valley, NC</option>
-            <option>Wyndham Sea Gardens, Pompano Bch, FL</option>
-            <option>Wyndham Sea Watch Plantation, Myrtle Bch, SC</option>
-            <option>Wyndham Seaglass Tower, Myrtle Bch, SC</option>
-            <option>Wyndham Sedona, AZ</option>
-            <option>Wyndham Smoky Mountains, TN</option>
-            <option>Wyndham St. Thomas, USVI</option>
-            <option>Wyndham Star Island, Kissimmee, FL</option>
-            <option>Wyndham Steamboat Springs, CO</option>
-            <option>Wyndham Towers on the Grove, Myrtle Bch, SC</option>
-            <option>Wyndham Waikiki Beach Walk, Honolulu, HI</option>
-            <option>Wyndham Westwinds, Myrtle Beach, SC</option>
-            <option>Other / Not listed</option>
-          </datalist>
-        </div>
-        <div class="f-field">
-          <label>Check-in date *</label>
-          <input type="date" name="checkin" required min="" />
-        </div>
-        <div class="f-field">
-          <label>Check-out date *</label>
-          <input type="date" name="checkout" required min="" />
-        </div>
-        <div class="f-field full">
-          <label style="display:flex;align-items:center;gap:10px;cursor:pointer;font-size:13px">
-            <input type="checkbox" name="flexible" value="Yes" style="width:16px;height:16px;accent-color:#1D9E75;cursor:pointer;" />
-            My dates are flexible — I'm open to nearby dates if it saves money
-          </label>
-        </div>
-        <div class="f-field">
-          <label>Party size</label>
-          <select name="guests">
-            <option>1–2 guests</option>
-            <option>3–4 guests</option>
-            <option>5–6 guests</option>
-            <option>7+ guests</option>
-          </select>
-        </div>
-        <div class="f-field">
-          <label>Nightly Budget Range</label>
-          <select name="budget">
-            <option>$250 – $349 per night</option>
-            <option>$350 – $499 per night</option>
-            <option>$500 – $699 per night</option>
-            <option>$700 – $999 per night</option>
-            <option>$1,000+ per night</option>
-          </select>
-        </div>
-        <div class="f-field full">
-          <label>Anything else we should know?</label>
-          <textarea name="notes" placeholder="Resort preferences, special requests, accessibility needs, flexible dates..."></textarea>
-        </div>
-      </div>
-      <div class="form-submit">
-        <button type="submit" class="submit-btn">Get my free quote →</button>
-        <div class="form-note">
-          <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-          Your information is private and never sold or shared.
-        </div>
-      </div>
-    </form>
+    <iframe
+      src="https://api.leadconnectorhq.com/widget/form/IhviTJOlEmorZj7oK4RB"
+      style="width:100%;height:1384px;border:none;border-radius:3px"
+      id="inline-IhviTJOlEmorZj7oK4RB"
+      data-layout="{'id':'INLINE'}"
+      data-trigger-type="alwaysShow"
+      data-trigger-value=""
+      data-activation-type="alwaysActivated"
+      data-activation-value=""
+      data-deactivation-type="neverDeactivate"
+      data-deactivation-value=""
+      data-form-name="Vacation Quote Request"
+      data-height="1384"
+      data-layout-iframe-id="inline-IhviTJOlEmorZj7oK4RB"
+      data-form-id="IhviTJOlEmorZj7oK4RB"
+      title="Vacation Quote Request">
+    </iframe>
+    <script src="https://link.msgsndr.com/js/form_embed.js"></script>
     <div class="success-msg" id="successMsg">
       <div style="font-size:40px;margin-bottom:16px">🌴</div>
       <h3>Got it — I'll personally take it from here.</h3>
@@ -799,20 +571,7 @@
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // Set minimum dates to today
-  const today = new Date().toISOString().split('T')[0];
-  const checkin = document.querySelector('input[name="checkin"]');
-  const checkout = document.querySelector('input[name="checkout"]');
-  checkin.min = today;
-  checkout.min = today;
-  checkin.addEventListener('change', function() {
-    checkout.min = this.value;
-    if (checkout.value && checkout.value < this.value) {
-      checkout.value = this.value;
-    }
-  });
-
+<script>
   // Slideshow
   const slides = document.querySelectorAll('.hero-slide');
   const dots = document.querySelectorAll('.dot');
@@ -835,6 +594,9 @@
   }));
 
   startTimer();
+</script>
+</body>
+</html>
 
   // Form
   document.getElementById('quoteForm').addEventListener('submit', function(e) {
@@ -869,14 +631,4 @@
     }).catch(function() {
       btn.textContent = 'Get my free quote →';
       btn.disabled = false;
-      alert('Something went wrong. Please try again or call us at (239) 823-7286.');
-    });
-  });
-
-  function showSuccess() {
-    document.getElementById('quoteForm').style.display = 'none';
-    document.getElementById('successMsg').style.display = 'block';
-  }
-</script>
-</body>
-</html>
+      alert('Something 
